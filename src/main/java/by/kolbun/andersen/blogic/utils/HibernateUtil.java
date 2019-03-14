@@ -17,6 +17,7 @@ public class HibernateUtil {
     static {
         try {
             Configuration configuration = new Configuration();
+
             configuration.addAnnotatedClass(Account.class)
                     .addAnnotatedClass(User.class)
                     .addAnnotatedClass(Transh.class);
@@ -35,7 +36,7 @@ public class HibernateUtil {
         return sessionFactory.openSession();
     }
 
-    private static SessionFactory getSessionFactory() {
-        return sessionFactory;
-    }
+//    private static SessionFactory getSessionFactory() {
+//        return sessionFactory;
+//    }
 }

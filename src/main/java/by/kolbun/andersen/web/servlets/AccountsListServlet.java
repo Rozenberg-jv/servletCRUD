@@ -20,6 +20,7 @@ import java.math.BigInteger;
 */
 @SuppressWarnings("SpellCheckingInspection")
 public class AccountsListServlet extends HttpServlet {
+
     private AccountService service = new AccountService();
 
     @Override

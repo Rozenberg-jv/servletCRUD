@@ -7,7 +7,7 @@ import java.math.BigInteger;
 @Table(name = "accounts")
 public class Account {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "money", nullable = false)
     private BigInteger money;

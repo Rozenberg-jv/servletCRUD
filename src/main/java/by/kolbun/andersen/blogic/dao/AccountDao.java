@@ -15,6 +15,7 @@ import java.util.List;
 @SuppressWarnings(value = "SpellCheckingInspection")
 public class AccountDao implements IAccountDao {
     private static AccountDao instance = new AccountDao();
+
     private Session session = HibernateUtil.getSession();
     private Transaction transaction;
 

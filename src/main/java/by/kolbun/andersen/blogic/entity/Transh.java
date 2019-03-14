@@ -8,11 +8,11 @@ import java.util.Date;
 @Table(name = "transactions")
 public class Transh {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @OneToOne
+    @ManyToOne
     private Account sender;
-    @OneToOne
+    @ManyToOne
     private Account receiver;
     @Column(name = "amount")
     private BigInteger amount;

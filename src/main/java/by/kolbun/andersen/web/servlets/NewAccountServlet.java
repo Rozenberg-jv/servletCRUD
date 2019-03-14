@@ -28,6 +28,6 @@ public class NewAccountServlet extends HttpServlet {
         Account a = new Account(new BigInteger(money), u);
         int id = service.add(a);
         System.out.println("added new account with id = " + id);
-        resp.sendRedirect("/a");
+        resp.sendRedirect("/account");
     }
 }
